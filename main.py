@@ -1,8 +1,6 @@
 import os
 import subprocess
+import ui as ui  # Import the ui module from your package
 
-
-# Streamlit app code
 if __name__ == "__main__":
-    script_path = os.path.abspath(__file__)
-    subprocess.run(["streamlit", "run", "ui.py"])
+    ui.run_streamlit()  # Call a function from ui.py
